@@ -1,0 +1,53 @@
+.header__item__link,
+.footer__menu__link {
+    transition: color .3s ease-in-out;
+}
+.city__navigationSlide__prev path,
+.city__navigationSlide__prev circle,
+.city__navigationSlide__next path,
+.city__navigationSlide__next circle {
+    transition: stroke .3s ease-in-out;
+}
+
+@media (hover: hover) {
+    .header__item__link:hover {
+        color: var(--color-red);
+    }
+    .footer__menu__link:hover {
+        color: var(--color-yellow);
+    }
+    .city__navigationSlide__prev:hover path,
+    .city__navigationSlide__prev:hover circle,
+    .city__navigationSlide__next:hover path,
+    .city__navigationSlide__next:hover circle {
+        stroke: var(--color-yellow);
+    }
+}
+
+.city__navigationSlide__prev:focus-visible path,
+.city__navigationSlide__prev:focus-visible circle,
+.city__navigationSlide__next:focus-visible path,
+.city__navigationSlide__next:focus-visible circle {
+    stroke: var(--color-yellow);
+}
+.city__navigationSlide__prev:active path,
+.city__navigationSlide__prev:active circle,
+.city__navigationSlide__next:active path,
+.city__navigationSlide__next:active circle {
+    stroke: var(--color-black);
+}
+
+.footer__menu__link:focus-visible {
+    color: var(--color-yellow);
+    outline: none;
+}
+.footer__menu__link:active {
+    color: var(--color-red);
+}
+.header__item__link:focus-visible {
+    color: var(--color-red);
+    outline: none;
+}
+.header__item__link:active {
+    color: var(--color-yellow);
+}

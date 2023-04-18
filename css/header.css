@@ -1,0 +1,24 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(4px);
+    z-index: 1001;
+}
+
+.header__container {
+    max-width: 976px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    padding-top: 32px;
+    padding-bottom: 25px;
+}
+.header__list {
+    justify-content: space-between;
+}
+.header__item__link {
+    font-size: 16px;
+    line-height: 19px;
+}

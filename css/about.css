@@ -1,0 +1,22 @@
+.about {
+    padding-top: 191px;
+    padding-bottom: 220px;
+    background-color: var(--color-white);
+    position: relative;
+    z-index: 1;
+}
+.about:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: url("../images/hourse.png"), url("../images/aboutImage2.png");
+    background-position: right 16% top 15%, bottom 20% left 15%;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+}
+.about__h2 {
+    line-height: 54px;
+    color: var(--color-black);
+    max-width: 1114px;
+}

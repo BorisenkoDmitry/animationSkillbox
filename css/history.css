@@ -1,0 +1,114 @@
+.history {
+    padding-top: 100px;
+}
+.history__h2 {
+    margin-bottom: 25px;
+}
+.history__list {
+    max-width: 976px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    counter-reset: counter;
+}
+.history__list__card {
+    display: flex;
+    position: relative;
+}
+
+.history__list__card::before {
+    content: counter(counter);
+    counter-increment: counter;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Prata";
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+    background-color: var(--color-yellow);
+    border-radius: 100%;
+    z-index: 2;
+    line-height: 0;
+}
+
+.history__list__card {
+    justify-content: flex-end;
+}
+
+.history__list__card:nth-child(2n) {
+    justify-content: flex-start;
+}
+.history__list__card:nth-child(2n) .history__list__content {
+    flex-direction: row-reverse;
+}
+.history__list__content {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-left: 1px solid  var(--color-yellow);
+    position: relative;
+    min-height: 240px;
+}
+
+.history-content__right {
+    max-width: 176px;
+    width: 100%;
+    min-height: 176px;
+    padding: 13px;
+    border-radius: 100%;
+    border: 1px solid var(--color-yellow);
+}
+.history-content__right__image {
+    border-radius: 100%;
+}
+.history-content__left {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+   
+}
+.history__h3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 18px;
+}
+.history__h3,
+.history__text {
+    padding: 12px 24px;
+    margin: 0;
+    height: 50%;
+}
+.history__list__card:first-child .history__list__content,
+.history__list__card:last-child .history__list__content {
+    border: none;
+}
+.history__list__card:first-child .history__list__content::before,
+.history__list__card:last-child .history__list__content::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    bottom: 0;
+    width: 1px;
+    background-color: var(--color-yellow);
+}
+.history__list__card:last-child .history__list__content::before {
+    top: 0;
+    height: 50%;
+}
+.history__list__card:nth-child(2n) .history__list__content {
+    border-left: none;
+    border-right: 1px solid  var(--color-yellow);
+    transform: translateX(1px);
+}
+.history__h3 {
+    border-bottom: 1px solid var(--color-yellow);
+}

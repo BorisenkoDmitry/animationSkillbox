@@ -1,0 +1,65 @@
+.price {
+    padding-bottom: 124px;
+    padding-top: 140px;
+}
+.price__h2 {
+    margin-bottom: 57px;
+}
+
+.price__txtwrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 240px;
+}
+.price__text {
+    max-width: 676px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+.price__list {
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.price__card {
+    width: calc((100% - 24px*3) / 4);
+    text-align: center;
+    position: relative;
+    padding-top: 89px;
+}
+.price__card__h3 {
+    font-family: "Raleway";
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 16px;
+}
+.price__card__price {
+    font-family: "Prate";
+    font-size: 22px;
+    margin: 0;
+}
+.price__card::before {
+    content: "";
+    height: 54px;
+    width: 70px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.price__card:nth-child(1)::before {
+    background-image: url("../images/price1.svg");
+}
+.price__card:nth-child(2)::before {
+    background-image: url("../images/price2.svg");
+}
+.price__card:nth-child(3)::before {
+    background-image: url("../images/price3.svg");
+}
+.price__card:nth-child(4)::before {
+    background-image: url("../images/price4.svg");
+}

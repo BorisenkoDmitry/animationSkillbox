@@ -1,0 +1,30 @@
+.footer {
+    background-color: var(--color-grey);
+    color: var(--color-white);
+    padding-top: 50px;
+    padding-bottom: 24px;
+}
+.footer__menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+}
+
+.footer__menu__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 120px;
+    gap: 18px 110px;
+    max-width: 574px;
+    width: 100%;
+    align-content: flex-start;
+}
+.footer__down {
+    align-items: center;
+    gap: 57px;
+    font-size: 12px;
+}
+.footer__down__copyright {
+    margin-bottom: 0;
+}

@@ -1,0 +1,51 @@
+.attraction {
+    background-color: var(--color-white);
+    padding-top: 124px;
+}
+
+.attraction__h2 {
+    margin-bottom: 157px;
+}
+.attraction__txtwrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 160px;
+}
+.attraction__text {
+    max-width: 676px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 30px;
+}
+.attraction__card {
+    padding-top: 75px;
+    padding-bottom: 100px;
+    border-top: 0.5px solid var(--color-yellow);
+    display: flex;
+    gap: 3%;
+    flex-wrap: wrap;
+}
+
+.attraction__card__h3 {
+    font-family: 'Prata';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    max-width: 200px;
+    width: 100%;
+    margin-bottom: 0;
+    margin-right: 65px;
+}
+.attraction__card__content {
+    display: flex;
+    gap: 24px;
+    flex: 1;
+}
+.attraction__card__image {
+    max-width: 376px;
+    width: 100%;
+    object-fit: cover;
+}
+.attraction__card__text {
+    line-height: 26px;
+}
