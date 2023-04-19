@@ -1,5 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
   const swiper = new Swiper('.city__content__swiper', {
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
     navigation: {
       nextEl: '.city__navigationSlide__next',
       prevEl: '.city__navigationSlide__prev',

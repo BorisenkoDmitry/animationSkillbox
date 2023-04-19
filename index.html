@@ -24,13 +24,16 @@
                     <a href="#history" class="header__item__link" aria-label="Вкладка меню История">История</a>
                 </li>
                 <li class="header__item">
-                    <a href="#attraction" class="header__item__link" aria-label="Вкладка меню Достопримечательности">Достопримечательности</a>
+                    <a href="#attraction" class="header__item__link"
+                        aria-label="Вкладка меню Достопримечательности">Достопримечательности</a>
                 </li>
                 <li class="header__item">
-                    <a href="#price" class="header__item__link" aria-label="Вкладка меню Бюджет поездки">Бюджет поездки</a>
+                    <a href="#price" class="header__item__link" aria-label="Вкладка меню Бюджет поездки">Бюджет
+                        поездки</a>
                 </li>
                 <li class="header__item">
-                    <a href="#Map" class="header__item__link" aria-label="Вкладка меню Карта Петербурга">Карта Петербурга</a>
+                    <a href="#Map" class="header__item__link" aria-label="Вкладка меню Карта Петербурга">Карта
+                        Петербурга</a>
                 </li>
             </ul>
         </div>
@@ -51,49 +54,69 @@
                 О городе
             </h2>
         </div>
-        <div class="city__content flex">
-            <div class="city__content__swiper swiper wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1s">
+        <div class="city__content">
+            <div class="city__content__swiper swiper wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
                 <div class="swiper-wrapper">
-                    <div class="city__content__slide swiper-slide"
-                        style="background-image: url('images/city-image-1.jpg')"></div>
-                    <div class="city__content__slide swiper-slide" style="background-color: blue;"></div>
-                    <div class="city__content__slide swiper-slide" style="background-color: grey;"></div>
+                    <div class="city__content__slide swiper-slide">
+                        <div class="city__content__slide__image">
+                            <img src="images/city-image-1.jpg" alt="">
+                        </div>
+                        <div class="city__content__slide__right" data-wow-duration="2s" data-wow-delay="2s">
+                            <p class="city__content__slide__right__text text">Санкт-Петербург — один из самых красивых
+                                городов России,
+                                который привлекает туристов со всего мира своей архитектурой, культурными
+                                достопримечательностями и богатой историей.</p>
+                        </div>
+                    </div>
+                    <div class="city__content__slide swiper-slide">
+                        <div class="city__content__slide__image">
+                            <img src="images/city-image-2.jpg" alt="">
+                        </div>
+                        <div class="city__content__slide__right">
+                            <p class="city__content__slide__right__text text">Город был основан в 1703 году Петром I на берегах реки Невы и стал символом силы и могущества Российской империи.</p>
+                        </div>
+                    </div>
+                    <div class="city__content__slide swiper-slide">
+                        <div class="city__content__slide__image">
+                            <img src="images/city-image-3.jpg" alt="">
+                        </div>
+                        <div class="city__content__slide__right">
+                            <p class="city__content__slide__right__text text">Сегодня Санкт-Петербург – это не только культурный центр, но и один из крупнейших портов мира, который является важным экономическим центром России.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="city__content__pagination swiper-pagination"></div>
+                <div class="city__content__pagination swiper-pagination wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.2s"></div>
             </div>
-            <div class="city__content__right wow fadeInRight" data-wow-duration="2s" data-wow-delay="2s">
-                <p class="city__content__right__text text">Санкт-Петербург — один из самых красивых городов России,
-                    который привлекает туристов со всего мира своей архитектурой, культурными
-                    достопримечательностями и богатой историей.</p>
-                <div class="city__navigationSlider flex">
-                    <button class="city__navigationSlide__prev btn-reset" aria-label="Переключить на предыдущий слайд">
-                        <svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="38" cy="38" r="37.5" fill="#F7F8F8" stroke="#B2B2B2" />
-                            <path d="M16.4154 38.0001H59.9241" stroke="#B2B2B2" stroke-width="2" />
-                            <path
-                                d="M35.1676 18.9082C35.1676 18.9082 33.7316 25.9574 28.4283 31.2607C23.125 36.564 16.0757 38.0001 16.0757 38.0001C16.0757 38.0001 22.7605 39.7351 28.3764 44.6439C33.9923 49.5528 36.0437 56.2158 36.0437 56.2158"
-                                stroke="#B2B2B2" stroke-width="2" />
-                        </svg>
-                    </button>
-                    <button class="city__navigationSlide__next btn-reset" aria-label="Переключить на следующий слайд">
-                        <svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="38" cy="38" r="37.5" fill="#F7F8F8" stroke="#B2B2B2" />
-                            <path d="M59.5844 38L16.0757 38" stroke="#B2B2B2" stroke-width="2" />
-                            <path
-                                d="M40.8322 57.0919C40.8322 57.0919 42.2682 50.0427 47.5715 44.7394C52.8748 39.4361 59.924 38 59.924 38C59.924 38 53.2393 36.265 47.6233 31.3562C42.0074 26.4474 39.956 19.7843 39.956 19.7843"
-                                stroke="#B2B2B2" stroke-width="2" />
-                        </svg>
-                    </button>
-                </div>
+
+            <div class="city__navigationSlider flex wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.5s">
+                <button class="city__navigationSlide__prev btn-reset" aria-label="Переключить на предыдущий слайд">
+                    <svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="38" cy="38" r="37.5" fill="#F7F8F8" stroke="#B2B2B2" />
+                        <path d="M16.4154 38.0001H59.9241" stroke="#B2B2B2" stroke-width="2" />
+                        <path
+                            d="M35.1676 18.9082C35.1676 18.9082 33.7316 25.9574 28.4283 31.2607C23.125 36.564 16.0757 38.0001 16.0757 38.0001C16.0757 38.0001 22.7605 39.7351 28.3764 44.6439C33.9923 49.5528 36.0437 56.2158 36.0437 56.2158"
+                            stroke="#B2B2B2" stroke-width="2" />
+                    </svg>
+                </button>
+                <button class="city__navigationSlide__next btn-reset" aria-label="Переключить на следующий слайд">
+                    <svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="38" cy="38" r="37.5" fill="#F7F8F8" stroke="#B2B2B2" />
+                        <path d="M59.5844 38L16.0757 38" stroke="#B2B2B2" stroke-width="2" />
+                        <path
+                            d="M40.8322 57.0919C40.8322 57.0919 42.2682 50.0427 47.5715 44.7394C52.8748 39.4361 59.924 38 59.924 38C59.924 38 53.2393 36.265 47.6233 31.3562C42.0074 26.4474 39.956 19.7843 39.956 19.7843"
+                            stroke="#B2B2B2" stroke-width="2" />
+                    </svg>
+                </button>
             </div>
         </div>
 
     </section>
 
-    <section class="about section">
+    <section class="about section wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
         <div class="about__container container">
-            <h2 class="about__h2 title-h2 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                В этом путеводителе мы расскажем  о самых интересных местах Санкт-Петербурга, которые  обязательно стоит посетить при поездке&nbsp;в&nbsp;этот&nbsp;прекрасный город.
+            <h2 class="about__h2 title-h2 wow fadeInLeft" data-wow-duration="1.2s" data-wow-delay="1.2s">
+                В этом путеводителе мы расскажем о самых интересных местах Санкт-Петербурга, которые обязательно стоит
+                посетить при поездке&nbsp;в&nbsp;этот&nbsp;прекрасный город.
             </h2>
         </div>
     </section>
@@ -101,7 +124,7 @@
         <div class="history__container container">
             <h2 class="history__h2 title-h2 wow fadeInDown" data-wow-duration="1s">История</h2>
             <ul class="history__list list-reset">
-                <li class="history__list__card wow fadeInUp" data-wow-duration="1s"  data-wow-delay="1s">
+                <li class="history__list__card wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                     <div class="history__list__content history-content">
                         <div class="history-content__left">
                             <h3 class="history__h3 title-h3">16 (27 по новому стилю) мая 1703 год </h3>
@@ -112,7 +135,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="history__list__card wow fadeInUp" data-wow-duration="1s"  data-wow-delay="1s">
+                <li class="history__list__card wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                     <div class="history__list__content history-content">
                         <div class="history-content__left">
                             <h3 class="history__h3 title-h3">21 мая 1712 год</h3>
@@ -123,7 +146,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="history__list__card wow fadeInUp" data-wow-duration="1s"  data-wow-delay="1s">
+                <li class="history__list__card wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                     <div class="history__list__content history-content">
                         <div class="history-content__left">
                             <h3 class="history__h3 title-h3">1914 год</h3>
@@ -134,7 +157,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="history__list__card wow fadeInUp" data-wow-duration="1s"  data-wow-delay="1s">
+                <li class="history__list__card wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                     <div class="history__list__content history-content">
                         <div class="history-content__left">
                             <h3 class="history__h3 title-h3">1918 год</h3>
@@ -145,7 +168,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="history__list__card wow fadeInUp" data-wow-duration="1s"  data-wow-delay="1s">
+                <li class="history__list__card wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                     <div class="history__list__content history-content">
                         <div class="history-content__left">
                             <h3 class="history__h3 title-h3">26 января 1924 год</h3>
@@ -156,7 +179,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="history__list__card wow fadeInUp" data-wow-duration="1s"  data-wow-delay="1s">
+                <li class="history__list__card wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                     <div class="history__list__content history-content">
                         <div class="history-content__left">
                             <h3 class="history__h3 title-h3">8 сентября 1941 —&nbsp;27&nbsp;января 1944 гг</h3>
@@ -167,7 +190,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="history__list__card wow fadeInUp" data-wow-duration="1s"  data-wow-delay="1s">
+                <li class="history__list__card wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                     <div class="history__list__content history-content">
                         <div class="history-content__left">
                             <h3 class="history__h3 title-h3">8 мая 1965 год</h3>
@@ -179,7 +202,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="history__list__card wow fadeInUp" data-wow-duration="1s"  data-wow-delay="1s">
+                <li class="history__list__card wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                     <div class="history__list__content history-content">
                         <div class="history-content__left">
                             <h3 class="history__h3 title-h3">6 сентября 1991 год</h3>
@@ -191,7 +214,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="history__list__card wow fadeInUp" data-wow-duration="1s"  data-wow-delay="1s">
+                <li class="history__list__card wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                     <div class="history__list__content history-content">
                         <div class="history-content__left">
                             <h3 class="history__h3 title-h3">22 сентября 2012 год</h3>
@@ -207,7 +230,8 @@
     </section>
     <section class="attraction section" id="attraction">
         <div class="attraction__conatiner container">
-            <h2 class="attraction__h2 title-h2 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">Достопримечательности</h2>
+            <h2 class="attraction__h2 title-h2 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                Достопримечательности</h2>
             <div class="attraction__txtwrapper wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
                 <p class="attraction__text text">Санкт-Петербург — город, который известен своими красивыми зданиями,
                     музеями и парками. Это один из самых красивых городов России, который привлекает миллионы туристов
@@ -300,7 +324,8 @@
         <div class="map__container container wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
             <h2 class="map__h2 title-h2">Карта Петербурга</h2>
         </div>
-        <div id="map" style="width: 100%; height: 474px" class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s"></div>
+        <div id="map" style="width: 100%; height: 474px" class="wow fadeInDown" data-wow-duration="1s"
+            data-wow-delay="1s"></div>
     </section>
     <footer class="footer">
         <div class="footer__container container">
@@ -313,23 +338,27 @@
                         <a href="#" class="footer__menu__link" aria-label="Вкладка меню История">История</a>
                     </li>
                     <li class="footer__menu__item">
-                        <a href="#" class="footer__menu__link" aria-label="Вкладка меню Достопримечательности">Достопримечательности</a>
+                        <a href="#" class="footer__menu__link"
+                            aria-label="Вкладка меню Достопримечательности">Достопримечательности</a>
                     </li>
                     <li class="footer__menu__item">
-                        <a href="#" class="footer__menu__link" aria-label="Вкладка меню Бюджет поездки">Бюджет поездки</a>
+                        <a href="#" class="footer__menu__link" aria-label="Вкладка меню Бюджет поездки">Бюджет
+                            поездки</a>
                     </li>
                     <li class="footer__menu__item">
-                        <a href="#" class="footer__menu__link" aria-label="Вкладка меню Карта Петербурга">Карта Петербурга</a>
+                        <a href="#" class="footer__menu__link" aria-label="Вкладка меню Карта Петербурга">Карта
+                            Петербурга</a>
                     </li>
                 </ul>
             </nav>
             <div class="footer__down flex">
                 <p class="footer__down__copyright">&copy; 2023</p>
-                <a href="#" class="footer__down__policy" aria-label="Политика конфиденциальности">Политика конфиденциальности</a>
+                <a href="#" class="footer__down__policy" aria-label="Политика конфиденциальности">Политика
+                    конфиденциальности</a>
             </div>
         </div>
     </footer>
-  
+
 
 </body>
 
