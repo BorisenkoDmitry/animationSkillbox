@@ -13,28 +13,28 @@
     position: relative;
 }
 
-.city__content__slide {
+.city__content-slide {
     display: flex;
     width: 100%;
 }
 
-.city__content__slide__image {
+.city__content-image {
     min-height: 476px;
     width: 56%;
     margin-right: 124px;
 }
-.city__content__slide__image img {
+.city__content-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.city__content__slide__right {
+.city__content-descr {
     flex: 1;
     z-index: 2;
 }
 
-.city__content__slide__right__text {
+.city__content-text {
     font-size: 18px;
     line-height: 26px;
     max-width: 320px;
@@ -49,22 +49,22 @@
     z-index: 2;
 }
 
-.city__navigationSlide__prev path,
-.city__navigationSlide__prev circle,
-.city__navigationSlide__next path,
-.city__navigationSlide__next circle {
+.city__navigationSlide-prev path,
+.city__navigationSlide-prev circle,
+.city__navigationSlide-next path,
+.city__navigationSlide-next circle {
     stroke: var(--color-red);
 }
-.city__navigationSlide__prev.swiper-button-disabled,
-.city__navigationSlide__next.swiper-button-disabled {
+.city__navigationSlide-prev.swiper-button-disabled,
+.city__navigationSlide-next.swiper-button-disabled {
     pointer-events: none;
     opacity: 0.5;
     filter: grayscale(1)
 }
-.city__content__pagination.swiper-pagination {
+.city__content-pagination.swiper-pagination {
     width: 60%;
 }
-.city__content__pagination.swiper-pagination .swiper-pagination-bullet {
+.city__content-pagination.swiper-pagination .swiper-pagination-bullet {
     width: 32px;
     height: 2px;
     border-radius: 0;
@@ -74,12 +74,12 @@
     opacity: 1;
     transition: background-color .3s ease-in-out;
 }
-.city__content__pagination.swiper-pagination {
+.city__content-pagination.swiper-pagination {
     bottom: 27px;
 }
-.city__content__pagination.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.city__content-pagination.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: var(--color-yellow);
 }
-.city__content__pagination.swiper-pagination .swiper-pagination-bullet:last-child {
+.city__content-pagination.swiper-pagination .swiper-pagination-bullet:last-child {
     margin-right: 0;
 }

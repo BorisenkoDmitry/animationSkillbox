@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const swiper = new Swiper('.city__content__swiper', {
+  const swiper = new Swiper('.city__content-swiper', {
     effect: 'fade',
     fadeEffect: {
       crossFade: true
     },
     navigation: {
-      nextEl: '.city__navigationSlide__next',
-      prevEl: '.city__navigationSlide__prev',
+      nextEl: '.city__navigationSlide-next',
+      prevEl: '.city__navigationSlide-prev',
     },
     pagination: {
-      el: '.city__content__pagination',
+      el: '.city__content-pagination',
       type: 'bullets',
       clickable: true
     },

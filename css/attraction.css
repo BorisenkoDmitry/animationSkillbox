@@ -26,7 +26,7 @@
     flex-wrap: wrap;
 }
 
-.attraction__card__h3 {
+.attraction__card-h3 {
     font-family: 'Prata';
     font-weight: 400;
     font-size: 24px;
@@ -36,16 +36,16 @@
     margin-bottom: 0;
     margin-right: 65px;
 }
-.attraction__card__content {
+.attraction__card-content {
     display: flex;
     gap: 24px;
     flex: 1;
 }
-.attraction__card__image {
+.attraction__card-image {
     max-width: 376px;
     width: 100%;
     object-fit: cover;
 }
-.attraction__card__text {
+.attraction__card-text {
     line-height: 26px;
 }

@@ -17,7 +17,7 @@
 .header__list {
     justify-content: space-between;
 }
-.header__item__link {
+.header__link {
     font-size: 16px;
     line-height: 19px;
 }

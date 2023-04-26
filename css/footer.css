@@ -10,7 +10,7 @@
     margin-bottom: 25px;
 }
 
-.footer__menu__list {
+.footer__list {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -25,6 +25,6 @@
     gap: 57px;
     font-size: 12px;
 }
-.footer__down__copyright {
+.footer__down-copyright {
     margin-bottom: 0;
 }

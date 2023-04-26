@@ -1,4 +1,4 @@
-.header__item__link,
+.header__link,
 .footer__menu__link {
     transition: color .3s ease-in-out;
 }
@@ -10,7 +10,7 @@
 }
 
 @media (hover: hover) {
-    .header__item__link:hover {
+    .header__link:hover {
         color: var(--color-red);
     }
     .footer__menu__link:hover {
@@ -44,10 +44,10 @@
 .footer__menu__link:active {
     color: var(--color-red);
 }
-.header__item__link:focus-visible {
+.header__link:focus-visible {
     color: var(--color-red);
     outline: none;
 }
-.header__item__link:active {
+.header__link:active {
     color: var(--color-yellow);
 }

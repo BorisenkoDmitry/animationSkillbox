@@ -28,14 +28,14 @@
     position: relative;
     padding-top: 89px;
 }
-.price__card__h3 {
+.price__h3 {
     font-family: "Raleway";
     font-size: 18px;
     line-height: 26px;
     margin-bottom: 16px;
 }
-.price__card__price {
-    font-family: "Prate";
+.price__price {
+    font-family: "Prata";
     font-size: 22px;
     margin: 0;
 }
